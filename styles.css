@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,84 +6,94 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Estilos del header */
 header {
-    background-color: #165aa7;
-    color: white;
-    padding: 1em 0;
+    background-color: #001f3f; /* Azul Naval */
+    padding: 20px;
     text-align: center;
 }
-.profile-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 50px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.text {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.text h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.text p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.photo {
-    flex: 0 0 150px;
-    text-align: right;
-}
-
-.photo img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #ddd;
-}
-
-nav ul {
-    list-style: none;
+header nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin: 0 1em;
+    margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
-section {
-    margin: 2em;
-    padding: 1em;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
-footer {
+/* Secciones generales */
+.light-gray-section {
+    background-color: #e0e0e0; /* Gris claro */
+    padding: 50px;
     text-align: center;
-    margin-top: 2em;
-    padding: 1em;
-    background-color: #333;
-    color: white;
+    font-style: italic;
 }
 
-footer a {
+/* Sección de perfil (Quién soy) */
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+}
+
+.profile-description {
+    max-width: 600px;
+}
+
+.profile-description h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #001f3f; /* Azul Naval */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 0.5em;
 }
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
