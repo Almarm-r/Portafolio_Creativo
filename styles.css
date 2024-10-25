@@ -6,10 +6,48 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #165aa7;
     color: white;
     padding: 1em 0;
     text-align: center;
+}
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.photo {
+    flex: 0 0 150px;
+    text-align: right;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
 }
 
 nav ul {
